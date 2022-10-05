@@ -23,7 +23,12 @@ namespace Planner_Virtual_PLP_2021_2
 
         public void CarregarData(DateTime dataRecebida)
         {
+            DateTime dataAtual = DateTime.UtcNow;
             dataSelecionada = dataRecebida;
+            if(dataAtual.Date == dataRecebida.Date)
+            {
+                painelCabecalho.BackColor = Color.Aqua; 
+            }
             lbdias.Text = dataRecebida.Day + " - " + dataRecebida.ToString("dddd");
             //Caso seja necessário, muda as cores do dia de acordo com o dia da semana
             ChangeDayColor(dataRecebida.ToString("dddd"));

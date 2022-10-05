@@ -192,5 +192,17 @@
   <ItemGroup>
     <None Include="Resources\icone-relatorio.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fechar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voltar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avancar.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

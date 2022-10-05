@@ -39,30 +39,33 @@ namespace Planner_Virtual_PLP_2021_2
             }
         }
 
-        private void BtnVoltarData_Click(object sender, EventArgs e)
+       
+        private void BtnListarTudo_Click(object sender, EventArgs e)
         {
-            painelDeDias.Controls.Clear();
-            mes--;
-            if (mes < 1)
-            {
-                ano--;
-                lbAno.Text = ano.ToString();
-                mes = 12;
-            }
-            lbMes.Text = conversorMes(mes.ToString());
-
-            int dias = DateTime.DaysInMonth(ano, mes);
-            for (int i = 1; i <= dias; i++)
-            {
-                DateTime novaData = new DateTime(ano, mes, i);
-                DiasComponent ucdias = new DiasComponent();
-                ucdias.CarregarData(novaData);
-                painelDeDias.Controls.Add(ucdias);
-            }
-
+            ListaForm listaForm = new ListaForm();
+            listaForm.ShowDialog();
         }
 
-        private void BtnProximaData_Click(object sender, EventArgs e)
+        private void BtnToRelatorio_Click(object sender, EventArgs e)
+        {
+            RelatorioForm relatorioForm = new RelatorioForm();
+            relatorioForm.ShowDialog();
+        }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnMinimizar_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+      
+        
+
+        private void BtnProximaData_Click_1(object sender, EventArgs e)
         {
             painelDeDias.Controls.Clear();
             mes++;
@@ -84,17 +87,29 @@ namespace Planner_Virtual_PLP_2021_2
             }
         }
 
-        private void BtnListarTudo_Click(object sender, EventArgs e)
+        private void BtnVoltarData_Click_1(object sender, EventArgs e)
         {
-            ListaForm listaForm = new ListaForm();
-            listaForm.ShowDialog();
+            painelDeDias.Controls.Clear();
+            mes--;
+            if (mes < 1)
+            {
+                ano--;
+                lbAno.Text = ano.ToString();
+                mes = 12;
+            }
+            lbMes.Text = conversorMes(mes.ToString());
+
+            int dias = DateTime.DaysInMonth(ano, mes);
+            for (int i = 1; i <= dias; i++)
+            {
+                DateTime novaData = new DateTime(ano, mes, i);
+                DiasComponent ucdias = new DiasComponent();
+                ucdias.CarregarData(novaData);
+                painelDeDias.Controls.Add(ucdias);
+            }
         }
 
-        private void BtnToRelatorio_Click(object sender, EventArgs e)
-        {
-            RelatorioForm relatorioForm = new RelatorioForm();
-            relatorioForm.ShowDialog();
-        }
+      
 
         private String conversorMes(String mesString)
         {
