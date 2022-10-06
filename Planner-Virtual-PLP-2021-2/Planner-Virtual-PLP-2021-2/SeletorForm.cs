@@ -113,6 +113,11 @@ namespace Planner_Virtual_PLP_2021_2
             this.Close();
         }
 
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         private void BtnToLista_Click(object sender, EventArgs e)
         {
             if (isParaAtualizarMeta == true)

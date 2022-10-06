@@ -18,7 +18,7 @@ namespace Planner_Virtual_PLP_2021_2
         public ListaForm()
         {
             InitializeComponent();
-            this.Text = "Lista de todos os Eventos já Registrados";
+            this.Text = "Lista de todos os eventos registrados";
             CarregarTarefas();
             CarregarMetas();
             CarregarLembretes();
@@ -370,5 +370,12 @@ namespace Planner_Virtual_PLP_2021_2
             leitor.Close();
             conn.Close();
         }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+       
     }
 }

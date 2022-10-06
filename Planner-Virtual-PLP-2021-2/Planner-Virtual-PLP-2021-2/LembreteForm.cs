@@ -104,5 +104,10 @@ namespace Planner_Virtual_PLP_2021_2
                     "verifique se todos os campos foram inseridos corretamente.");
             }
         }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

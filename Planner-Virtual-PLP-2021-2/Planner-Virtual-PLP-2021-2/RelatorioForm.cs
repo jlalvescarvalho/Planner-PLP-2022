@@ -16,5 +16,10 @@ namespace Planner_Virtual_PLP_2021_2
         {
             InitializeComponent();
         }
+
+        private void btnFechar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
