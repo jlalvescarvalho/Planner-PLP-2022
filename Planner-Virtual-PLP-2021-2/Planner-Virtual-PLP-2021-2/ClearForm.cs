@@ -82,7 +82,7 @@ namespace Planner_Virtual_PLP_2021_2
             {
                 MySqlConnection conn = new MySqlConnection(connString);
                 conn.Open();
-                String atualizarTarefa = "UPDATE tarefa SET estado_de_conclusao = '" + comboConcluir.Text.ToLowerInvariant() + "'";
+                String atualizarTarefa = "UPDATE tarefa SET estado_de_conclusao = '" + comboConcluir.Text.ToLowerInvariant() + "' WHERE id_tarefa = "+id;
                 MySqlCommand cmd = new MySqlCommand(atualizarTarefa, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();
@@ -94,7 +94,7 @@ namespace Planner_Virtual_PLP_2021_2
             {
                 MySqlConnection conn = new MySqlConnection(connString);
                 conn.Open();
-                String atualizarTarefa = "UPDATE meta SET estado_de_conclusao = '" + comboConcluir.Text.ToLowerInvariant() + "'";
+                String atualizarTarefa = "UPDATE meta SET estado_de_conclusao = '" + comboConcluir.Text.ToLowerInvariant() + "' WHERE id_meta = "+id;
                 MySqlCommand cmd = new MySqlCommand(atualizarTarefa, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();

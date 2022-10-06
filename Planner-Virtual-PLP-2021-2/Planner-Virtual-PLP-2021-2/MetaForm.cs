@@ -96,7 +96,7 @@ namespace Planner_Virtual_PLP_2021_2
             {
                 MySqlConnection conn = new MySqlConnection(connString);
                 conn.Open();
-                String atualizarTarefa = "UPDATE meta SET descricao = '" + txDescricao.Text + "', nome_categoria = '" + comboCategoria.Text + "', data_de_efetivacao = '" + dataAGravar + "'";
+                String atualizarTarefa = "UPDATE meta SET descricao = '" + txDescricao.Text + "', nome_categoria = '" + comboCategoria.Text + "', data_de_efetivacao = '" + dataAGravar + "' WHERE id_meta = "+id_meta;
                 MySqlCommand cmd = new MySqlCommand(atualizarTarefa, conn);
                 cmd.ExecuteNonQuery();
                 conn.Close();

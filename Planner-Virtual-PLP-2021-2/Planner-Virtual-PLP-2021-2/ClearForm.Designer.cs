@@ -54,6 +54,7 @@
             // 
             // txEstadoAtual
             // 
+            this.txEstadoAtual.Enabled = false;
             this.txEstadoAtual.Location = new System.Drawing.Point(13, 45);
             this.txEstadoAtual.Name = "txEstadoAtual";
             this.txEstadoAtual.ReadOnly = true;
