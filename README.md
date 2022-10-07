@@ -1,6 +1,6 @@
 # Planner-PLP-2022 (Concluído)
 
-## Descrição do Projeto
+## Sobre o que se trata o Projeto?
 Este projeto trata-se de uma Aplicação Desktop de Gerenciamento de Calendário (Planner) feita com linguagem de programação C# para apresentação de um trabalho acadêmico advindo da disciplina de Paradigmas de Linguagens de Programação do Bacharelado em Ciência da Computação (BCC) da Universidade Federal do Agreste de Pernambuco (UFAPE).
 
 ## Integrantes da Equipe de Desenvolvimento
