@@ -1,4 +1,4 @@
-# Planner-PLP-2022 (Concluída)
+# Planner-PLP-2022 (Concluído)
 
 ## Descrição do Projeto
 Este projeto trata-se de uma Aplicação Desktop de Gerenciamento de Calendário (Planner) feita com linguagem de programação C# para apresentação de um trabalho acadêmico advindo da disciplina de Paradigmas de Linguagens de Programação do Bacharelado em Ciência da Computação (BCC) da Universidade Federal do Agreste de Pernambuco (UFAPE).
@@ -7,6 +7,16 @@ Este projeto trata-se de uma Aplicação Desktop de Gerenciamento de Calendário
 ### Jenilson de Moraes
 ### Max David
 ### Pedro Augusto
+
+## Descrição de como replicar o projeto em sua máquina:
+### Utilize o MySQL Workbench 8.0 e dentro do aplicativo:
+#### Crie um usuário chamado 'dotnet' com a senha 'dotnet123#' na qual possua permissões de INSERT, UPDATE, DELETE e SELECT;
+#### Crie um banco de dados chamado 'db_planner' com o comando CREATE DATABASE db_planner;
+#### Execute os dois SQLs abaixo em ordem:
+https://drive.google.com/file/d/1ijuPq-gDTdrtwDOCnbEGJ_GGMBOLaFqR/view?usp=sharing - SQL de criação de tabelas.
+https://drive.google.com/file/d/1OvgfTyjGVwPWx6BYP1DD4oAhpQ01Nl4J/view?usp=sharing - SQL de inserção de categorias.
+(Após isso basta executar o programa através de uma solução Visual Studio ou acessar este caminho no projeto Planner-Virtual-PLP-2021-2\bin\Debug e executar o .exe do programa)
+
 
 ## Material para Estudo e Consulta
 ### Tipos de Linguagem de Programação:
