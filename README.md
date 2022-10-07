@@ -15,7 +15,8 @@ Este projeto trata-se de uma Aplicação Desktop de Gerenciamento de Calendário
 #### Execute os dois SQLs abaixo em ordem:
 https://drive.google.com/file/d/1ijuPq-gDTdrtwDOCnbEGJ_GGMBOLaFqR/view?usp=sharing - SQL de criação de tabelas.
 https://drive.google.com/file/d/1OvgfTyjGVwPWx6BYP1DD4oAhpQ01Nl4J/view?usp=sharing - SQL de inserção de categorias.
-(Após isso basta executar o programa através de uma solução Visual Studio ou acessar este caminho no projeto Planner-Virtual-PLP-2021-2\bin\Debug e executar o .exe do programa)
+
+### (Após isso basta executar o programa através de uma solução Visual Studio ou acessar este caminho no projeto Planner-Virtual-PLP-2021-2\bin\Debug e executar o .exe do programa)
 
 
 ## Material para Estudo e Consulta
